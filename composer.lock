@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56ad986dfec44eb7322c0de4840a55e5",
+    "content-hash": "5a1c0d706f70e91cb38eab2fac86eb7a",
     "packages": [
         {
             "name": "anax/anax-cli",
@@ -2943,9 +2943,21 @@
     ],
     "aliases": [],
     "minimum-stability": "beta",
-    "stability-flags": [],
+    "stability-flags": {
+        "anax/commons": 15,
+        "anax/configure": 15,
+        "anax/controller": 10,
+        "anax/di": 15,
+        "anax/page": 10,
+        "anax/request": 10,
+        "anax/response": 10,
+        "anax/view": 10,
+        "anax/url": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.2"
+    },
     "platform-dev": []
 }
