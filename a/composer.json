@@ -18,7 +18,7 @@
     ],
     "require": {
         "anax/anax-ramverk1-me": "^1.0.0",
-        "ramverk1v2-module/ramverk1v2-module": "master"
+        "anax/ramverk1v2-module": "master"
     },
     "require-dev": {
         "phpunit/phpunit": "^7"
