@@ -3,6 +3,6 @@
 /vendor
 memory::
 composer.lock
-/config/api_key.php
+# /config/api_key.php
 /a
 /cache
