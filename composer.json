@@ -1,0 +1,20 @@
+{
+    "name": "anax/noname",
+    "description": "A module for ramverk1 course.",
+    "license": "MIT",
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Anax\\": "src/",
+            "Jiad\\": "src/"
+        }
+    },
+    "require": {
+        "anax/anax-ramverk1-me": "^1.0.0",
+        "anax/anax-cli": "^1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
