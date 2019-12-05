@@ -1,8 +1,9 @@
 {
     "name": "jimpxx/ramverk1v2-module",
+    "type": "library",
     "description": "A module for ramverk1 course.",
     "license": "MIT",
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
