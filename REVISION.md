@@ -1,5 +1,9 @@
 # Revision History
 
+## v1.0.5 (2019-12-06)
+
+-   Added inline style to map-div.
+
 ## v1.0.4 (2019-12-06)
 
 -   Module is now done for kmom04.
