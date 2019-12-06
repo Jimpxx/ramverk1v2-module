@@ -10,7 +10,7 @@ namespace Anax\View;
 
 <h1>Weather Results</h1>
 
-<div id="map"></div>
+<div id="map" style="height:500px"></div>
 
 
 <?php if ($time == "future") { ?>
