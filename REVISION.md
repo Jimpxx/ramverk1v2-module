@@ -1,5 +1,9 @@
 # Revision History
 
+## v2.0.0 (2019-12-08)
+
+-   Uploaded configuration files to Travis and Scrutinizer.
+
 ## v1.0.5 (2019-12-06)
 
 -   Added inline style to map-div.
