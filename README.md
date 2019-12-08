@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Jimpxx/ramverk1v2-module.svg?branch=master)](https://travis-ci.org/Jimpxx/ramverk1v2-module)
+
 # Module for the course Webbaserade ramverk och designmönster at BTH (PHP)
 
 ## How to install

@@ -16,27 +16,19 @@ class Curl
      *
      * @return self
      */
-    // Maybe a string with only url to make it more standardized?
     public function sCurl(array $search) : object
     {
-        // Break out?
         $key = require(ANAX_INSTALL_PATH . "/config/api_key.php");
         $api_key = $key["darksky"];
         $lat = $search["lat"];
         $long = $search["long"];
-        // ******************************
 
-
-        // $api_key = "672b4527998ddd2803d7acf40f43d52a";
         $url = "https://api.darksky.net/forecast/$api_key/$lat,$long";
-        // $url = "https://api.darksky.net/forecast/672b4527998ddd2803d7acf40f43d52a/58.385750,13.571860";
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        
-        // $info = "hej";
 
         $info = curl_exec($ch);
         curl_close($ch);
@@ -50,21 +42,15 @@ class Curl
      *
      * @return self
      */
-    // Maybe a string with only url to make it more standardized?
     public function mCurl(array $search) : array
     {
-        // Break out?
         $key = require(ANAX_INSTALL_PATH . "/config/api_key.php");
         $api_key = $key["darksky"];
         $lat = $search["lat"];
         $long = $search["long"];
-        // ******************************
 
-
-        // $api_key = "672b4527998ddd2803d7acf40f43d52a";
         $url = "https://api.darksky.net/forecast/$api_key/$lat,$long";
-        // $url = "https://api.darksky.net/forecast/672b4527998ddd2803d7acf40f43d52a/58.385750,13.571860";
-        
+
         $options = [
             CURLOPT_RETURNTRANSFER => true,
         ];
@@ -73,8 +59,6 @@ class Curl
         $chAll = [];
 
         $time = time();
-
-        // strtotime('-1 day', $todayTime);
         
         $i = 1;
         while ($i <= 30) {
@@ -107,21 +91,5 @@ class Curl
         }
 
         return json_decode(json_encode($response), false);
-        // return $response;
-        
-        
-        
-        
-        // $ch = curl_init();
-
-        // curl_setopt($ch, CURLOPT_URL, $url);
-        // curl_setopt($ch, CURLOPT_HEADER, 0);
-        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        
-        // // $info = "hej";
-
-        // $info = curl_exec($ch);
-        // curl_close($ch);
-        // return json_decode($info);
     }
 }

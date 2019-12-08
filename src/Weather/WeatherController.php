@@ -86,48 +86,22 @@ class WeatherController implements ContainerInjectableInterface
         $title = "Weather Result";
 
         // Post
-        // $long = $this->di->request->getPost("long");
-        // $lat = $this->di->request->getPost("lat");
         $searchType = $this->di->request->getPost("searchType");
         $search = $this->di->request->getPost("search");
         $time = $this->di->request->getPost("time");
-        // $doWeather = $this->di->request->getPost("doWeather");
 
         $test = "";
 
-        // $searchOptions = [
-        //     // "lat" => $ipInfo->latitude,
-        //     // "long" => $ipInfo->longitude
-        // ];
-
-        // if ($searchType == "ip") {
-        //     $test = "IP";
-
         $geotag = $this->di->get("geotag");
-            // $geotag = new GeoTag();
-            
+
         $ipInfo = $geotag->getGeoInfo($search);
 
-            // $searchOptions["lat"] = $ipInfo->latitude;
-            // $searchOptions["long"] = $ipInfo->longitude;
-
-            // // $info = $module->getGeoInfo($ip);
-            // $info = $module->getGeoInfo($ip);
-        // }
-        // else if ($searchType == "coordinates") {
-        //     $test = "CITY";
-        //     $ipInfo = "CITY";
-
-        //     $searchOptions["lat"] = $lat;
-        //     $searchOptions["long"] = $long;
-        // }
 
         $searchOptions = [
             "lat" => $ipInfo->latitude,
             "long" => $ipInfo->longitude
         ];
 
-        // $curl = new Curl();
         $curl = $this->di->get("curl");
 
         $error = 0;
@@ -135,10 +109,8 @@ class WeatherController implements ContainerInjectableInterface
 
         if ($time == "future") {
             $weatherInfo = $curl->sCurl($searchOptions); // Single Curl
-            // $type = "single";
         } else if ($time == "past") {
             $weatherInfo = $curl->mCurl($searchOptions); // Multi Curl
-            // $type = "multi";
         }
 
 
