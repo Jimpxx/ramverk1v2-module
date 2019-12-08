@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/Jimpxx/ramverk1v2-module.svg?branch=master)](https://travis-ci.org/Jimpxx/ramverk1v2-module)
+[![Build Status](https://scrutinizer-ci.com/g/Jimpxx/ramverk1v2-module/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Jimpxx/ramverk1v2-module/build-status/master)
+[![Code Coverage](https://scrutinizer-ci.com/g/Jimpxx/ramverk1v2-module/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Jimpxx/ramverk1v2-module/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Jimpxx/ramverk1v2-module/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Jimpxx/ramverk1v2-module/?branch=master)
 
 # Module for the course Webbaserade ramverk och designmönster at BTH (PHP)
 
