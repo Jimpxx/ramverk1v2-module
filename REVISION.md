@@ -1,5 +1,9 @@
 # Revision History
 
+## v2.0.1 (2019-12-12)
+
+-   Done with kmom05.
+
 ## v2.0.0 (2019-12-08)
 
 -   Uploaded configuration files to Travis and Scrutinizer.
